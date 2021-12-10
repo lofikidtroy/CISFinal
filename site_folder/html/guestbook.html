@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="CIS Final">
+  <meta name="keywords" content="HTML,CSS,JavaScript">
+  <meta name="author" content="Troy Legaspi">
+		<link rel="stylesheet" type ="text/css" href="../css/mystyle.css"/>
+		<title> Guestbook Page - Troy Legaspi</title>
+		<style>
+h3
+{
+font-family: Consolas, sans-serif;
+color: #5de3b2;
+}
+		</style>
+	</head>
+	<body>
+
+		<div class ="center">
+			<button class="button button1" onclick="document.location='../html/home.html'">Home</button>
+			<button class="button button1" onclick="document.location='../html/resume.html'">Resume</button>
+			<button class="button button1" onclick="document.location='../html/interests.html'">Interests</button>
+			<button class="button button1" onclick="document.location='../html/reflections.html'">Reflections</button>
+			<button class="button button1" onclick="document.location='../html/guestbook.html'">Guestbook</button>
+			<h3>Guest Book</h3>
+		</div>
+		<br><br>
+		<div class ="center">
+  <form  method="post"  action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+			Enter Your Name: <input type="text" name="Name" size="40"/>
+			<br/>
+			<br/>
+			Enter Your E-mail: <input type="text" name="Email" size="40"/>
+			<br/>
+			<br/><br/>
+			What country do you live in?
+			<input type="text" name="country" size="40">
+			<br/>
+			<br/>
+			How many stars would you rate this website?
+            <br/>
+			<input type="radio" name="Rating" value="One" />One Star (*) <br>
+			<input type="radio" name="Rating" value="Two" />Two Star (**) <br>
+			<input type="radio" name="Rating" value="Three" />Three Stars (***) <br>
+			<input type="radio" name="Rating" value="Four" />Four Stars (****) <br>
+			<input type="radio" name="Rating" value="Five" />Five Stars (*****) <br>
+			<br/>
+			<br/>
+			Should we add you to our mailing list?
+			<input type="checkbox" name="mailinglist"/><br/>
+			<br/>
+			<br/>
+			What was your favorite page(s)? 
+			<br/>
+			<select name="interests" multiple="multiple" size="6">
+				<option>Home</option>
+				<option>Resume</option>
+				<option>Interests</option>
+				<option>Reflections</option>
+				<option>Guestbook</option>
+			</select>
+			<br/>
+			<br/>
+			How did you find my website?
+			<br/>
+			<select name="website">
+				<option>Select one</option>
+				<option>I'm a friend</option>
+				<option>A friend directed me to your site</option>
+				<option>School Web Site</option>
+				<option>A search engine directed me to your site</option>
+				<option>I came across your site by accident</option>
+				<option>Other</option>
+			</select>
+			<br/>
+			<br/>
+			Comments:<br/>
+			<textarea name="comments" cols="50" rows="6">
+Enter your message here.
+			</textarea>
+			<br/>
+			<br/>
+			<input type="submit" value="submit"/>
+			<input type="reset"/>
+		</form>
+		</div>
+	</body>
+</html>
